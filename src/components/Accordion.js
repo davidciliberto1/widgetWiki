@@ -21,7 +21,7 @@ const Accordion = ({ items }) => {
                     {item.title}
                 </div>
                 <div className={`content ${active}`} >
-                    <p>{item.content}</p>
+                    <p>{item.content}<br /> {item.content2} <br /> {item.content3}</p>
                 </div>
             </React.Fragment>)
     })

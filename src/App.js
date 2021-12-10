@@ -8,6 +8,9 @@ import Header from './components/Header';
 
 const gitHub = <a href='https://github.com/davidciliberto1'>davidciliberto1</a>
 const linkedin = <a href='https://www.linkedin.com/in/david-ciliberto-428703120/'>David Ciliberto</a>
+const proyectWikiWidgets = <a href='https://github.com/davidciliberto1/widgetWiki'>CV Widgets</a>
+const proyectVideosHooks = <a href='https://github.com/davidciliberto1/videosHooks'>Videos</a>
+const proyectPics = <a href='https://github.com/davidciliberto1/pics'>Pics</a>
 const items = [
     {
         title: 'David Ciliberto',
@@ -29,6 +32,12 @@ const items = [
         title: 'linkedin',
         content: linkedin
     },
+    {
+        title: 'Proyectos',
+        content: proyectWikiWidgets,
+        content2: proyectVideosHooks,
+        content3: proyectPics
+    },
 ];
 
 const options = [
@@ -45,10 +54,12 @@ const options = [
         value: 'Blue'
     },
     {
-        label: 'Udemy  /  React js y Javascript'       
+        label: 'Udemy  /  React js y Javascript',
+        value: 'react javascript'     
     },
     {
-        label: 'Udemy  /  Modern React with Redux'
+        label: 'Udemy  /  Modern React with Redux',
+        value: 'react redux'
     },
 ];
 

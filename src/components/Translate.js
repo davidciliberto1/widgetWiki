@@ -6,6 +6,14 @@ import Convert from './Convert';
 
 const options = [
     {
+        label: 'English',
+        value: 'en'
+    },
+    {
+        label: 'French',
+        value: 'fr'
+    },
+    {
         label: 'Afrikaans',
         value: 'af'
     },
@@ -20,15 +28,7 @@ const options = [
     {
         label: 'Dutch',
         value: 'nl'
-    },
-    {
-        label: 'English',
-        value: 'en'
-    }, 
-    {
-        label: 'French',
-        value: 'fr'
-    }
+    },   
 ]
 
 const Translate = () => {
