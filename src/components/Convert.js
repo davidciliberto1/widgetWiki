@@ -9,7 +9,7 @@ const Convert = ({ language, text }) => {
     useEffect(() => {
         const timerId =setTimeout(() => {
             setDebouncedText(text);
-        }, 700)
+        }, 500)
         return () => {
             clearTimeout(timerId)
         }

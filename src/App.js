@@ -6,65 +6,81 @@ import Translate from './components/Translate';
 import Route from './components/Route';
 import Header from './components/Header';
 
+const gitHub = <a href='https://github.com/davidciliberto1'>davidciliberto1</a>
+const linkedin = <a href='https://www.linkedin.com/in/david-ciliberto-428703120/'>David Ciliberto</a>
 const items = [
     {
-        title: 'what is React?',
-        content: 'React is a front end javascript framework'
+        title: 'David Ciliberto',
+        content: 'Buenos Aires (Capital Federal)'
     },
     {
-        title: 'Why use React?',
-        content: 'React is a favorite JS library among enginers'
+        title: 'Telefono',
+        content: '(11) 5582 6914'
     },
     {
-        title: 'How do you use React?',
-        content: 'You use React by creating components'
-    }
+        title: 'Correo',
+        content: 'davidciliberto@gmail.com'
+    },
+    {
+        title: 'github',
+        content: gitHub
+    },
+    {
+        title: 'linkedin',
+        content: linkedin
+    },
 ];
 
 const options = [
     {
-        label: 'The color red',
+        label: 'Certification Front End Libraries',
         value: 'Red'
     },
     {
-        label: 'The color green',
+        label: 'Certification Javascript ES6, Algorithms and Data Structures',
         value: 'Green'
     },
     {
-        label: 'A shade of blue',
+        label: 'Responsive web design Certification',
         value: 'Blue'
-    }
+    },
+    {
+        label: 'Udemy  /  React js y Javascript'       
+    },
+    {
+        label: 'Udemy  /  Modern React with Redux'
+    },
 ];
 
 
 export default () => {
 
-const [selected, setSelected] = useState(options[0]);
+    const [selected, setSelected] = useState(options[0]);
 
     return (
         <div>
             <Header />
-            <Route 
-            path='/'>
-            <Accordion 
-            items={items} />
+            <Route
+                path='/'>
+                <Accordion
+                    items={items} />
             </Route>
             <Route path='/list'>
                 <Search />
             </Route>
             <Route path='/dropdown'>
-                <Dropdown 
-                label='Select a Color'
-                options={options}
-                selected={selected}
-                onSelectedChange={setSelected}
+                <Dropdown
+                    label='Certifications and Courses'
+                    options={options}
+                    selected={selected}
+                    onSelectedChange={setSelected}
                 />
             </Route>
             <Route path='/translate'>
                 <Translate />
             </Route>
 
-           
+
         </div>
     );
 };
