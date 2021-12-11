@@ -55,15 +55,13 @@ const options = [
     },
     {
         label: 'Udemy  /  React js y Javascript',
-        value: 'react javascript'     
+        value: 'react javascript'
     },
     {
         label: 'Udemy  /  Modern React with Redux',
         value: 'react redux'
     },
 ];
-
-
 export default () => {
 
     const [selected, setSelected] = useState(options[0]);
@@ -84,14 +82,11 @@ export default () => {
                     label='Certifications and Courses'
                     options={options}
                     selected={selected}
-                    onSelectedChange={setSelected}
-                />
+                    onSelectedChange={setSelected} />
             </Route>
             <Route path='/translate'>
                 <Translate />
             </Route>
-
-
         </div>
     );
 };
