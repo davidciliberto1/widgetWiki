@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Search = () => {
-    const [term, setTerm] = useState('React');
+    const [term, setTerm] = useState('react');
     const [debouncedTerm, setDebounceTerm] = useState(term);
     const [results, setResults] = useState([]);
 
@@ -33,17 +33,25 @@ const Search = () => {
 
 
     const renderedResults = results.map((result) => {
-        return <div className='item' key={result.pageid}>
-            <div className='right floated content'>
-                <a className='ui button' href={`https://en.wikipedia.org?curid=${result.pageid}`}>Go</a>
-            </div>
-            <div className='content'>
-                <div className='header'>
-                    {result.title}
+        return (
+            <div className='item' key={result.pageid}>
+                <div className='right floated content'>
+                    <a className='ui button' tabIndex='0' href={`https://en.wikipedia.org?curid=${result.pageid}`}>Go</a>
+                    <div className="ui red button small">
+                        <i className="heart icon small"></i> Like
+                    </div>
+                    <div className="ui basic red left pointing label">
+                        {result.wordcount}
+                    </div>
                 </div>
-                <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
+                <div className='content'>
+                    <div className='header'>
+                        {result.title}
+                    </div>
+                    <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
+                </div>
             </div>
-        </div>
+        )
     })
 
     return (
