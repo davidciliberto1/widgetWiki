@@ -67,8 +67,9 @@ export default () => {
     const [selected, setSelected] = useState(options[0]);
 
     return (
-        <div>
+        <div className='ui container'>
             <Header />
+            <br />
             <Route
                 path='/'>
                 <Accordion
