@@ -12,26 +12,28 @@ const App = () => {
 
     return (
         <div className='ui container'>
-            <Header />
-            <br />
-            <Route
-                path='/'>
-                <Accordion
-                    items={Constants.items} />
-            </Route>
-            <Route path='/list'>
-                <Search />
-            </Route>
-            <Route path='/dropdown'>
-                <Dropdown
-                    label='Certifications and Courses'
-                    options={Constants.options}
-                    selected={selected}
-                    onSelectedChange={setSelected} />
-            </Route>
-            <Route path='/translate'>
-                <Translate />
-            </Route>
+            <div className='ui segment'>
+                <Header />
+                <br />
+                <Route
+                    path='/'>
+                    <Accordion
+                        items={Constants.items} />
+                </Route>
+                <Route path='/list'>
+                    <Search />
+                </Route>
+                <Route path='/dropdown'>
+                    <Dropdown
+                        label='Certifications and Courses'
+                        options={Constants.options}
+                        selected={selected}
+                        onSelectedChange={setSelected} />
+                </Route>
+                <Route path='/translate'>
+                    <Translate />
+                </Route>
+            </div>
         </div>
     );
 };

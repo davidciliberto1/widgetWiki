@@ -54,3 +54,30 @@ export const options = [
         value: 'React redux'
     },
 ];
+
+export const optionsTranslate = [
+    {
+        label: 'English',
+        value: 'en'
+    },
+    {
+        label: 'French',
+        value: 'fr'
+    },
+    {
+        label: 'Afrikaans',
+        value: 'af'
+    },
+    {
+        label: 'Arabic',
+        value: 'ar'
+    },
+    {
+        label: 'Hindi',
+        value: 'hi'
+    },
+    {
+        label: 'Dutch',
+        value: 'nl'
+    },
+]

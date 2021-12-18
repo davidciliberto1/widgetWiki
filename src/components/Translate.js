@@ -1,36 +1,11 @@
 import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 import Convert from './Convert';
+import * as Constants from './Constants';
 
-const options = [
-    {
-        label: 'English',
-        value: 'en'
-    },
-    {
-        label: 'French',
-        value: 'fr'
-    },
-    {
-        label: 'Afrikaans',
-        value: 'af'
-    },
-    {
-        label: 'Arabic',
-        value: 'ar'
-    },
-    {
-        label: 'Hindi',
-        value: 'hi'
-    },
-    {
-        label: 'Dutch',
-        value: 'nl'
-    },
-]
 
 const Translate = () => {
-    const [language, setLanguage] = useState(options[0]);
+    const [language, setLanguage] = useState(Constants.optionsTranslate[0]);
     const [text, setText] = useState('');
 
     return (
@@ -47,12 +22,14 @@ const Translate = () => {
                 label='select a language'
                 selected={language}
                 onSelectedChange={setLanguage}
-                options={options} />
-            <hr />
+                options={Constants.optionsTranslate} />
+            <div className='ui horizontal inverted divider'>output</div>
             <h3 className='ui header' >Output</h3>
+            <div className="ui segment">
             <Convert
                 text={text}
                 language={language} />
+                </div>
         </div>
     )
 }
