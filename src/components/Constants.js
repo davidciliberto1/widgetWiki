@@ -9,23 +9,23 @@ export const items = [
         content: 'Buenos Aires (Capital Federal)'
     },
     {
-        title: 'Telefono',
+        title: 'Phone Number',
         content: '(11) 5582 6914'
     },
     {
-        title: 'Correo',
+        title: 'E-mail',
         content: 'davidciliberto@gmail.com'
     },
     {
-        title: 'github',
+        title: 'Github',
         content: gitHub
     },
     {
-        title: 'linkedin',
+        title: 'Linkedin',
         content: linkedin
     },
     {
-        title: 'Proyectos',
+        title: 'Proyects',
         content: proyectWikiWidgets,
         content2: proyectVideosHooks,
         content3: proyectPics
@@ -47,10 +47,10 @@ export const options = [
     },
     {
         label: 'Udemy  /  React js y Javascript',
-        value: 'react javascript'
+        value: 'React javascript'
     },
     {
         label: 'Udemy  /  Modern React with Redux',
-        value: 'react redux'
+        value: 'React redux'
     },
 ];

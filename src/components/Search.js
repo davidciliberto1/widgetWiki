@@ -59,11 +59,14 @@ const Search = () => {
             <div className='ui form'>
                 <div className='field'>
                     <label>Enter Search Term</label>
+                    <div className='ui icon input'>
                     <input
                         className='input'
                         value={term}
                         onChange={e => setTerm(e.target.value)}
                     />
+                    <i className="inverted circular search link icon"></i>
+                    </div>
                 </div>
             </div>
             <div className='ui celled list'>
