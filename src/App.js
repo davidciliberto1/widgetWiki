@@ -62,8 +62,7 @@ const options = [
         value: 'react redux'
     },
 ];
-export default () => {
-
+const App = () => {
     const [selected, setSelected] = useState(options[0]);
 
     return (
@@ -91,3 +90,4 @@ export default () => {
         </div>
     );
 };
+export default App;
