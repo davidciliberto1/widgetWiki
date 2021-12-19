@@ -17,8 +17,7 @@ const App = () => {
                 <br />
                 <Route
                     path='/'>
-                    <Accordion
-                        items={Constants.items} />
+                    <Accordion items={Constants.items} />
                 </Route>
                 <Route path='/list'>
                     <Search />

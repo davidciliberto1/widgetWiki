@@ -40,14 +40,10 @@ const Search = () => {
                     <div className="ui red button small">
                         <i className="heart icon small"></i> Like
                     </div>
-                    <div className="ui basic red left pointing label">
-                        {result.wordcount}
-                    </div>
+                    <div className="ui basic red left pointing label">{result.wordcount}</div>
                 </div>
                 <div className='content'>
-                    <div className='header'>
-                        {result.title}
-                    </div>
+                    <div className='header'>{result.title}</div>
                     <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
                 </div>
             </div>
@@ -60,20 +56,17 @@ const Search = () => {
                 <div className='field'>
                     <label>Enter Search Term</label>
                     <div className='ui icon input'>
-                    <input
-                        className='input'
-                        value={term}
-                        onChange={e => setTerm(e.target.value)}
-                    />
-                    <i className="inverted circular search link icon"></i>
+                        <input
+                            className='input'
+                            value={term}
+                            onChange={e => setTerm(e.target.value)}
+                        />
+                        <i className="inverted circular search link icon"></i>
                     </div>
                 </div>
             </div>
-            <div className='ui celled list'>
-                {renderedResults}
-            </div>
+            <div className='ui celled list'>{renderedResults}</div>
         </div>
     )
 }
-
 export default Search;

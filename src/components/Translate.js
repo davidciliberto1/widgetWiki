@@ -13,9 +13,7 @@ const Translate = () => {
             <div className='ui form'>
                 <div className='field'>
                     <label>Enter Text</label>
-                    <input
-                        value={text}
-                        onChange={(e) => setText(e.target.value)} />
+                    <input value={text} onChange={(e) => setText(e.target.value)} />
                 </div>
             </div>
             <Dropdown
@@ -24,12 +22,10 @@ const Translate = () => {
                 onSelectedChange={setLanguage}
                 options={Constants.optionsTranslate} />
             <div className='ui horizontal inverted divider'>output</div>
-            <h3 className='ui header' >Output</h3>
+            <h3 className='ui header'>Output</h3>
             <div className="ui segment">
-            <Convert
-                text={text}
-                language={language} />
-                </div>
+                <Convert text={text} language={language} />
+            </div>
         </div>
     )
 }
