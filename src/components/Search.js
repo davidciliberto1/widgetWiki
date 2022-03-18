@@ -38,7 +38,7 @@ const Search = () => {
                 <div className='right floated content'>
                     <a className='ui button' tabIndex='0' href={`https://en.wikipedia.org?curid=${result.pageid}`}>Go</a>
                     <div className="ui red button small">
-                        <i className="heart icon small"></i> Like
+                        <i className="heart icon small"></i>Like
                     </div>
                     <div className="ui basic red left pointing label">{result.wordcount}</div>
                 </div>

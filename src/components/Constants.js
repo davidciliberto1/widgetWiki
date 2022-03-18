@@ -10,7 +10,7 @@ export const items = [
     },
     {
         title: 'Phone Number',
-        content: '(11) 5582 6914'
+        content: '(11) 6552-9273'
     },
     {
         title: 'E-mail',
